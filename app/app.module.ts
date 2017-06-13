@@ -1,5 +1,6 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptModule } from "nativescript-angular/nativescript.module";
+import { NativeScriptUIChartModule } from "nativescript-telerik-ui-pro/chart/angular";
 
 import { AppComponent } from "./app.component";
 import { PokemonService } from "./pokemon/pokemon.service";
@@ -9,7 +10,8 @@ import { PokemonService } from "./pokemon/pokemon.service";
     AppComponent
   ],
   imports: [
-    NativeScriptModule
+    NativeScriptModule,
+    NativeScriptUIChartModule
   ],
   declarations: [
     AppComponent
