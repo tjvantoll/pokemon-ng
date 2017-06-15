@@ -4,7 +4,3 @@ Image {
   height: 120;
   width: 120;
 }
-.container {
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
