@@ -1,8 +1,9 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptModule } from "nativescript-angular/nativescript.module";
-import { NativeScriptUIChartModule } from "nativescript-telerik-ui-pro/chart/angular";
+import { NativeScriptRouterModule } from "nativescript-angular/router";
 
 import { AppComponent } from "./app.component";
+import { routes, navigatableComponents } from "./app.routing";
 import { PokemonService } from "./pokemon/pokemon.service";
 
 @NgModule({
@@ -11,10 +12,12 @@ import { PokemonService } from "./pokemon/pokemon.service";
   ],
   imports: [
     NativeScriptModule,
-    NativeScriptUIChartModule
+    NativeScriptRouterModule,
+    NativeScriptRouterModule.forRoot(routes)
   ],
   declarations: [
-    AppComponent
+    AppComponent,
+    ...navigatableComponents
   ],
   providers: [
     PokemonService

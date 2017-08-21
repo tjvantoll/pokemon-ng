@@ -1,6 +1,6 @@
 @import "nativescript-theme-core/css/core.light.css";
 
-Image {
-  height: 120;
-  width: 120;
+.container {
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
